@@ -40,7 +40,7 @@ export default {
           message: '请填写账号或密码',
           type: 'warning'
         });
-        }else if(this.text!="admin"&&this.psd!="123"){
+        }else if(this.text!="admin"||this.psd!="123"){
             this.$message({
           message: '账号或密码错误',
           type: 'warning'
