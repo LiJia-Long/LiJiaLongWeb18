@@ -34,6 +34,34 @@ export default new Router({
         {
           path:'/Zu3',
           component:()=>import('./views/Zu3.vue'),
+        },
+        {
+          path:'/Zu5',
+          component:()=>import('./views/Zu5.vue'),
+        },
+        {
+          path:'/Zu51',
+          component:()=>import('./views/Zu51.vue'),
+        },
+        {
+          path:'/Zu7',
+          component:()=>import('./views/Zu7.vue'),
+        },
+        {
+          path:'/Zu71',
+          component:()=>import('./views/Zu71.vue'),
+        },
+        {
+          path:'/Zu72',
+          component:()=>import('./views/Zu72.vue'),
+        },
+        {
+          path:'/Zu73',
+          component:()=>import('./views/Zu73.vue'),
+        },
+        {
+          path:'/Zu74',
+          component:()=>import('./views/Zu74.vue'),
         }
       ]
     },

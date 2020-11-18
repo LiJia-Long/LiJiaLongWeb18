@@ -735,7 +735,7 @@ export default {
   line-height: 30px;
 }
 .t div:hover {
-  background: rgb(0, 153, 255);
+  background: rgb(0, 153, 255); 
   color: #ffffff;
   cursor: pointer;
 }

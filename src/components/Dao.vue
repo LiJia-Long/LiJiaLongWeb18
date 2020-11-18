@@ -29,22 +29,32 @@
   </el-menu-item>
   </router-link>
 
+<router-link to="/Zu2" tag="div">
   <el-menu-item index="4">
     <i class="el-icon-tickets"></i>
     <span slot="title">历史</span>
   </el-menu-item>
+  </router-link>
+
+<router-link to="/Zu5" tag="div">
   <el-menu-item index="5">
     <i class="el-icon-user-solid"></i>
     <span slot="title">客户</span>
   </el-menu-item>
+</router-link>
+
   <el-menu-item index="6">
     <i class="el-icon-s-order"></i>
     <span slot="title">工单</span>
   </el-menu-item>
+
+  <router-link to="/Zu7" tag="div">
   <el-menu-item index="7">
     <i class="el-icon-s-data"></i>
     <span slot="title">统计</span>
   </el-menu-item>
+</router-link>
+  
   <el-menu-item index="8">
     <i class="el-icon-setting"></i>
     <span slot="title">设置</span>
