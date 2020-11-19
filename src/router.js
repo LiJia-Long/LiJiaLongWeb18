@@ -62,6 +62,10 @@ export default new Router({
         {
           path:'/Zu74',
           component:()=>import('./views/Zu74.vue'),
+        },
+        {
+          path:'/Zu8',
+          component:()=>import('./views/Zu8.vue'),
         }
       ]
     },
