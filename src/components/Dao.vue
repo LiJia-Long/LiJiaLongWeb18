@@ -34,7 +34,7 @@
           </el-menu-item>
         </router-link>
 
-        <router-link to="/Zu2" tag="div">
+        <router-link to="/Zu4" tag="div">
           <el-menu-item index="4">
             <i class="el-icon-tickets"></i>
             <span slot="title">历史</span>
@@ -48,11 +48,12 @@
           </el-menu-item>
         </router-link>
 
+<router-link to="/Zu6" tag="div">
         <el-menu-item index="6">
           <i class="el-icon-s-order"></i>
           <span slot="title">工单</span>
         </el-menu-item>
-
+</router-link>
         <router-link to="/Zu7" tag="div">
           <el-menu-item index="7">
             <i class="el-icon-s-data"></i>
@@ -60,17 +61,19 @@
           </el-menu-item>
         </router-link>
 
-        <router-link to="/Zu8" tag="div">
+        <router-link to="/Shou2" tag="div">
           <el-menu-item index="8">
             <i class="el-icon-setting"></i>
             <span slot="title">设置</span>
           </el-menu-item>
         </router-link>
 
+<router-link to="/Deng" tag="div">
         <el-menu-item index="9">
           <i class="el-icon-switch-button"></i>
           <span slot="title">退出</span>
         </el-menu-item>
+        </router-link>
       </el-menu>
     </div>
   </div>

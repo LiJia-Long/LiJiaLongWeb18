@@ -4,7 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes: [
     {
@@ -36,12 +36,20 @@ export default new Router({
           component:()=>import('./views/Zu3.vue'),
         },
         {
+          path:'/Zu4',
+          component:()=>import('./views/Zu4.vue'),
+        },
+        {
           path:'/Zu5',
           component:()=>import('./views/Zu5.vue'),
         },
         {
           path:'/Zu51',
           component:()=>import('./views/Zu51.vue'),
+        },
+        {
+          path:'/Zu6',
+          component:()=>import('./views/Zu6.vue'),
         },
         {
           path:'/Zu7',
@@ -63,12 +71,115 @@ export default new Router({
           path:'/Zu74',
           component:()=>import('./views/Zu74.vue'),
         },
+        
+      ]
+    },
+    {
+      path:'/Shou2',
+      component:()=>import('./components/Shou2.vue'),
+      children:[
+        {
+          path:'/Shou2',
+          component:()=>import('./views/Zu8.vue'),
+        },
         {
           path:'/Zu8',
           component:()=>import('./views/Zu8.vue'),
-        }
+        },
+        {
+          path:'/Zu81',
+          component:()=>import('./views/Zu81.vue'),
+        },
+        {
+          path:'/Zu82',
+          component:()=>import('./views/Zu82.vue'),
+        },
+        {
+          path:'/Zu83',
+          component:()=>import('./views/Zu83.vue'),
+        },
+        {
+          path:'/Zu83-1',
+          component:()=>import('./views/Zu83-1.vue'),
+        },
+        {
+          path:'/Zu84',
+          component:()=>import('./views/Zu84.vue'),
+        },
+        {
+          path:'/Zu85',
+          component:()=>import('./views/Zu85.vue'),
+        },
+        {
+          path:'/Zu85-1',
+          component:()=>import('./views/Zu85-1.vue'),
+        },
+        {
+          path:'/Zu86',
+          component:()=>import('./views/Zu86.vue'),
+        },
+        {
+          path:'/Zu87',
+          component:()=>import('./views/Zu87.vue'),
+        },
+        {
+          path:'/Zu88',
+          component:()=>import('./views/Zu88.vue'),
+        },
+        {
+          path:'/Zu89',
+          component:()=>import('./views/Zu89.vue'),
+        },
+        {
+          path:'/Zu810',
+          component:()=>import('./views/Zu810.vue'),
+        },
+        {
+          path:'/Zu811',
+          component:()=>import('./views/Zu811.vue'),
+        },
+        {
+          path:'/Zu812',
+          component:()=>import('./views/Zu812.vue'),
+        },
+        {
+          path:'/Zu813',
+          component:()=>import('./views/Zu813.vue'),
+        },
+        {
+          path:'/Zu814',
+          component:()=>import('./views/Zu814.vue'),
+        },
+        {
+          path:'/Zu815',
+          component:()=>import('./views/Zu815.vue'),
+        },
+        {
+          path:'/Zu816',
+          component:()=>import('./views/Zu816.vue'),
+        },
+        {
+          path:'/Zu817',
+          component:()=>import('./views/Zu817.vue'),
+        },
+        {
+          path:'/Zu818',
+          component:()=>import('./views/Zu818.vue'),
+        },
+        {
+          path:'/Zu819',
+          component:()=>import('./views/Zu819.vue'),
+        },
+        {
+          path:'/Zu820',
+          component:()=>import('./views/Zu820.vue'),
+        },
+        {
+          path:'/Zu821',
+          component:()=>import('./views/Zu821.vue'),
+        },
       ]
-    },
+    }
    
   ]
 })

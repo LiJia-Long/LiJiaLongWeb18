@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <Tou title="会话"></Tou>
+    <Tou title="历史会话"></Tou>
     <div class="cont">
       <div class="div1">
-        <p class="p1">当前会话</p>
+        <p class="p1">历史会话</p>
         <p class="tab">
           <el-button slot="reference">
             <img
@@ -500,7 +500,7 @@
 <script>
 import Tou from "../components/Tou";
 export default {
-  name: "Zu2",
+  name: "Zu4",
   components: {
     Tou,
   },

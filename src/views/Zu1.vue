@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-        <Tou title="首页"></Tou>
-         <div class="cont">
+  <div id="app">
+    <Tou title="首页"></Tou>
+    <div class="cont">
       <h3>客服七尾，欢迎回来！</h3>
       <div class="div1">
         <div class="div1-1">
@@ -26,128 +26,126 @@
         </div>
       </div>
       <div class="div2">
-          <div class="div2-1">
-              <img src="../assets/img/tjt.png"  width="750px" >
+        <div class="div2-1">
+          <img src="../assets/img/tjt.png" width="750px" />
+        </div>
+        <div class="div2-2">
+          <p class="p1">快捷入口</p>
+          <router-link tag="div" to="/Zu2">
+            <img src="../assets/img/1.png" />
+          </router-link>
+          <router-link tag="div" to="/Zu3">
+            <img src="../assets/img/2.png" />
+          </router-link>
+          <router-link tag="div" to="/Zu4">
+            <img src="../assets/img/3.png" />
+          </router-link>
+          <router-link tag="div" to="/Zu5">
+            <img src="../assets/img/4.png" />
+          </router-link>
+          <router-link tag="div" to="/Zu6">
+            <img src="../assets/img/5.png" />
+          </router-link>
+          <router-link tag="div" to="Zu7">
+            <img src="../assets/img/6.png" />
+          </router-link>
+          <div>
+            <img src="../assets/img/7.png" />
           </div>
-          <div class="div2-2">
-              <p class="p1">
-                  快捷入口
-              </p>
-              <router-link tag="div" to="">
-                  <img src="../assets/img/1.png" >
-              </router-link>
-              <router-link tag="div" to="">
-                  <img src="../assets/img/2.png">
-              </router-link>
-              <router-link tag="div" to="">
-                  <img src="../assets/img/3.png" >
-              </router-link>
-              <router-link tag="div" to="">
-                  <img src="../assets/img/4.png">
-              </router-link>
-              <router-link tag="div" to="">
-                  <img src="../assets/img/5.png">
-              </router-link>
-              <router-link tag="div" to="">
-                  <img src="../assets/img/6.png">
-              </router-link>
-              <router-link tag="div" to="">
-                  <img src="../assets/img/7.png">
-              </router-link>
-          </div>
+        </div>
       </div>
       <div class="div3">
-          <p>
-              客服监控
-          </p>
-    <el-table
-      :data="tableData"
-      style="width: 1250px;">
-      <el-table-column align="center"
-        prop="date"
-        label="客服昵称"
-        width="180">
-      </el-table-column>
-      <el-table-column align="center"
-        prop="name"
-        label="状态"
-        width="180">
-      </el-table-column>
-      <el-table-column align="center"
-        prop="address"
-        label="在线时长">
-      </el-table-column>
-      <el-table-column align="center"
-        prop="hui"
-        label="会话数"
-        width="180">
-      </el-table-column>
-      <el-table-column align="center"
-        prop="xiao"
-        label="消息数"
-        width="180">
-      </el-table-column>
-      <el-table-column align="center"
-        prop="px"
-        label="平均响应时长"
-        width="180">
-      </el-table-column>
-      <el-table-column align="center"
-        prop="ph"
-        label="平均会话时长"
-        width="180">
-      </el-table-column>
-      
-    </el-table>
+        <p>客服监控</p>
+        <el-table :data="tableData" style="width: 1250px">
+          <el-table-column
+            align="center"
+            prop="date"
+            label="客服昵称"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column align="center" prop="name" label="状态" width="180">
+          </el-table-column>
+          <el-table-column align="center" prop="address" label="在线时长">
+          </el-table-column>
+          <el-table-column align="center" prop="hui" label="会话数" width="180">
+          </el-table-column>
+          <el-table-column
+            align="center"
+            prop="xiao"
+            label="消息数"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column
+            align="center"
+            prop="px"
+            label="平均响应时长"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column
+            align="center"
+            prop="ph"
+            label="平均会话时长"
+            width="180"
+          >
+          </el-table-column>
+        </el-table>
       </div>
     </div>
-    </div>
+  </div>
 </template>
 <script>
 import Tou from "../components/Tou";
 export default {
-    name:'Zu1',
-    components: {
-    Tou
+  name: "Zu1",
+  components: {
+    Tou,
   },
-     data() {
-        return {
-          tableData: [{
-            date: '客服小美',
-            name: '在线',
-            address: '6h',
-            hui:'30',
-            xiao:'389',
-            px:'24s',
-            ph:'5min'
-          }, {
-             date: '客服小美',
-            name: '在线',
-            address: '6h',
-            hui:'30',
-            xiao:'389',
-            px:'24s',
-            ph:'5min'
-          }, {
-             date: '客服小美',
-            name: '在线',
-            address: '6h',
-            hui:'30',
-            xiao:'389',
-            px:'24s',
-            ph:'5min'
-          }, {
-            date: '客服小美',
-            name: '在线',
-            address: '6h',
-            hui:'30',
-            xiao:'389',
-            px:'24s',
-            ph:'5min'
-          }]
-        }
-      }
-}
+  data() {
+    return {
+      tableData: [
+        {
+          date: "客服小美",
+          name: "在线",
+          address: "6h",
+          hui: "30",
+          xiao: "389",
+          px: "24s",
+          ph: "5min",
+        },
+        {
+          date: "客服小美",
+          name: "在线",
+          address: "6h",
+          hui: "30",
+          xiao: "389",
+          px: "24s",
+          ph: "5min",
+        },
+        {
+          date: "客服小美",
+          name: "在线",
+          address: "6h",
+          hui: "30",
+          xiao: "389",
+          px: "24s",
+          ph: "5min",
+        },
+        {
+          date: "客服小美",
+          name: "在线",
+          address: "6h",
+          hui: "30",
+          xiao: "389",
+          px: "24s",
+          ph: "5min",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style scoped>
 .cont {
@@ -157,7 +155,7 @@ export default {
   background: #e6f1ff;
   margin-top: 60px;
 }
-h3{
+h3 {
   margin: 15px 30px;
 }
 .div1 {
@@ -187,42 +185,42 @@ h3{
   line-height: 60px;
   font-weight: 900;
 }
-.div2{
-    width: 1270px;
-    margin-top: 10px;
-    height: 340px;
-    margin-left: 20px;
+.div2 {
+  width: 1270px;
+  margin-top: 10px;
+  height: 340px;
+  margin-left: 20px;
 }
-.div2-1{
-    width: 750px;
-    background: #ffffff;
-    float: left;
+.div2-1 {
+  width: 750px;
+  background: #ffffff;
+  float: left;
 }
-.div2-2{
-    width: 490px;
-    height: 325px;
-    float: left;
-    background: #ffffff;
-    margin-left: 10px;
-    border-radius: 5px;
+.div2-2 {
+  width: 490px;
+  height: 325px;
+  float: left;
+  background: #ffffff;
+  margin-left: 10px;
+  border-radius: 5px;
 }
-.p1{
-    font-size: 18px;
-    padding-left: 20px;
-    margin: 10px 0px;
+.p1 {
+  font-size: 18px;
+  padding-left: 20px;
+  margin: 10px 0px;
 }
-.div2-2 div{
-    height: 119px;
-    float: left;
-    padding: 10px 20px;
-    cursor: pointer;
+.div2-2 div {
+  height: 119px;
+  float: left;
+  padding: 10px 20px;
+  cursor: pointer;
 }
-.div3{
-    width: 1250px;
-    background: #ffffff;
+.div3 {
+  width: 1250px;
+  background: #ffffff;
 }
-.div3 p{
-    font-size: 20px;
-    padding: 0px 20px;
+.div3 p {
+  font-size: 20px;
+  padding: 0px 20px;
 }
 </style>

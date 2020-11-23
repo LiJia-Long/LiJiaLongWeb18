@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Tou title="个人信息"></Tou>
+    <Tou title="基础信息"></Tou>
     <div class="cont">
       
       <div class="right">
         <div class="p">
-          <p>个人信息</p>
+          <p>基础信息</p>
           <hr style="width: 990px; border: 1px solid #dedede" />
           <p>
             <span>上传头像：</span
@@ -15,11 +15,11 @@
             />
           </p>
           <p>
-            <span>*邮箱地址</span>
-            <input type="text" placeholder="11938898@163.com" />
+            <span>*机器人昵称</span>
+            <input type="text" placeholder="小美" />
           </p>
           <p>
-            <span>*客服昵称</span> <input type="text" placeholder="客服小美" />
+            <span>*备注</span> <input type="text" placeholder="客服小美" />
           </p>
           <p><span>*真实姓名</span> <input type="text" placeholder="杜宇" /></p>
           <p>
@@ -51,7 +51,7 @@
 <script>
 import Tou from "../components/Tou";
 export default {
-  name: "Zu8",
+  name: "Zu814",
   components: {
     Tou,
   },
@@ -73,6 +73,8 @@ export default {
   width: 1295px;
   margin-top: 60px;
 }
+
+
 .right {
   background: #ffffff;
   width: 1020px;

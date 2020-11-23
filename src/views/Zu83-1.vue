@@ -1,14 +1,13 @@
 <template>
   <div id="app">
-    <Tou title="个人信息"></Tou>
+    <Tou title="新增客服信息"></Tou>
     <div class="cont">
-      
       <div class="right">
         <div class="p">
-          <p>个人信息</p>
+          <p>新增客服信息</p>
           <hr style="width: 990px; border: 1px solid #dedede" />
           <p>
-            <span>上传头像：</span
+            <span>上传头像:</span
             ><img src="../assets/img/9.png" align="center" /><img
               src="../assets/img/10.png"
               align="center"
@@ -16,12 +15,12 @@
           </p>
           <p>
             <span>*邮箱地址</span>
-            <input type="text" placeholder="11938898@163.com" />
+            <input type="text" placeholder="该邮箱将作为客服人员的登录账号" />
           </p>
           <p>
-            <span>*客服昵称</span> <input type="text" placeholder="客服小美" />
+            <span>*客服昵称</span> <input type="text" placeholder="与外部客户沟通时使用" />
           </p>
-          <p><span>*真实姓名</span> <input type="text" placeholder="杜宇" /></p>
+          <p><span>*真实姓名</span> <input type="text" placeholder="请输入" /></p>
           <p>
             <span>客服工号 </span> <input type="text" placeholder="请输入" />
           </p>
@@ -40,7 +39,10 @@
             <span>确认新密码</span>
             <input type="text" placeholder="请再次输入密码" />
           </p>
-          <p>
+          <router-link to="/Zu83" tag="p" class="s">
+              <el-button>取消并返回</el-button>
+          </router-link>
+          <p class="btn">
             <el-button type="primary" @click="open()">保存</el-button>
           </p>
         </div>
@@ -51,7 +53,7 @@
 <script>
 import Tou from "../components/Tou";
 export default {
-  name: "Zu8",
+  name: "Zu83-1",
   components: {
     Tou,
   },
@@ -106,5 +108,11 @@ export default {
   background: #dedede;
   width: 300px;
   text-indent: 10px;
+}
+.s{
+    float: left;
+}
+.btn{
+    float: left;
 }
 </style>
